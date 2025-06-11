@@ -8,10 +8,10 @@
 
 ## 🪄 Introduction
 
-<p align="middle">
+<p align="left">
 <img src="assets/teaser.png" width="100%">
 <br>
-<em>Multi-plane Synchronization</em> is a non-training strategy to adapt 2D operations for multi-plane panoramic representations, which can be applied to different tasks such as panorama generation and understanding. Based on this strategy, we further present <em>DreamCube</em>, a diffusion-based model for RGB-D cube map generation from single-view input.
+<em>Multi-plane Synchronization</em> is a non-training strategy to adapt 2D diffusion models for multi-plane panoramic representations (e.g., cubemaps). Based on this strategy, we present <b>DreamCube</b>, a diffusion-based model for RGB-D cube map generation from single-view inputs.
 </p>
 
 ## 📢 News
