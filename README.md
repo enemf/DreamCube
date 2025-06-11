@@ -27,6 +27,7 @@ We provide inference scripts for generating RGB-D cubemaps and 3D scenes (both m
 ```bash
 bash app.py --use-gradio
 ```
+It takes about 20 seconds to produce RGB-D cubemap, RGB-D equirectangular panorama, and corresponding 3D scenes (both mesh and 3dgs) on a Nvidia L40S GPU.
 <p align="middle">
 <img src="assets/gradio_snapshot.png" width="100%">
 </p>
