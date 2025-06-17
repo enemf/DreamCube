@@ -1,12 +1,13 @@
 <h1 align="center">DreamCube: 3D Panorama Generation via Multi-plane Synchronization</h1>
 
-<p align="center">
-<a href=''><img src='https://img.shields.io/badge/arXiv-xxxx.xxxxx-b31b1b.svg'></a> &nbsp;
-<a href='https://yukun-huang.github.io/DreamCube/'><img src='https://img.shields.io/badge/Project-Page-Green'></a> &nbsp;
-<a href='https://huggingface.co/KevinHuang/DreamCube'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
-</p>
 
-## 🪄 Introduction
+<div align="center">
+  
+[![Project Page](https://img.shields.io/badge/🏠-Project%20Page-blue.svg)](https://yukun-huang.github.io/DreamCube/)
+[![Paper](https://img.shields.io/badge/📑-Paper-green.svg)](https://arxiv.org/abs/xxxx.xxxxx)
+[![Model](https://img.shields.io/badge/🤗-Model-yellow.svg)](https://huggingface.co/KevinHuang/DreamCube)
+
+</div>
 
 <p align="left">
 <img src="assets/teaser.png" width="100%">
