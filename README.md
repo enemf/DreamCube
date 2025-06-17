@@ -3,16 +3,19 @@
 
 <div align="center">
   
-[![Project Page](https://img.shields.io/badge/🏠-Project%20Page-blue.svg)](https://yukun-huang.github.io/DreamCube/)
-[![Paper](https://img.shields.io/badge/📑-Paper-green.svg)](https://arxiv.org/abs/xxxx.xxxxx)
+[![Project Page](https://img.shields.io/badge/🏠-Project%20Page-green.svg)](https://yukun-huang.github.io/DreamCube/)
+[![Paper](https://img.shields.io/badge/📑-Paper-red.svg)](https://arxiv.org/abs/xxxx.xxxxx)
 [![Model](https://img.shields.io/badge/🤗-Model-yellow.svg)](https://huggingface.co/KevinHuang/DreamCube)
+[![Video](https://img.shields.io/badge/🎞️-Video-blue.svg)](https://www.youtube.com/watch?v=7x4Elc2tO6g)
 
 </div>
 
 <p align="left">
 <img src="assets/teaser.png" width="100%">
 <br>
-<em>Multi-plane Synchronization</em> is a non-training strategy to adapt 2D diffusion models for multi-plane panoramic representations (e.g., cubemaps). Based on this strategy, we present <b>DreamCube</b>, a diffusion-based model for RGB-D cube map generation from single-view inputs.
+We propose <b>Multi-plane Synchronization</b> to adapt 2D diffusion models for multi-plane panoramic representations (i.e., cubemaps), which facilitates different tasks including RGB-D panorama generation, panorama depth estimation, and 3D scene generation.
+
+Based on this design, we further introduce <b>DreamCube</b>, a diffusion-based framework for RGB-D cubemap generation from single-view inputs.
 </p>
 
 ## 📢 News
