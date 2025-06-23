@@ -4,7 +4,7 @@
 <div align="center">
   
 [![Project Page](https://img.shields.io/badge/🏠-Project%20Page-green.svg)](https://yukun-huang.github.io/DreamCube/)
-[![Paper](https://img.shields.io/badge/📑-Paper-red.svg)](https://arxiv.org/abs/xxxx.xxxxx)
+[![Paper](https://img.shields.io/badge/📑-Paper-red.svg)](https://arxiv.org/abs/2506.17206)
 [![Model](https://img.shields.io/badge/🤗-Model-yellow.svg)](https://huggingface.co/KevinHuang/DreamCube)
 [![Video](https://img.shields.io/badge/🎞️-Video-blue.svg)](https://www.youtube.com/watch?v=7x4Elc2tO6g)
 
@@ -52,7 +52,7 @@ If you find this repository helpful for your work, please consider citing it as 
   title={{DreamCube: RGB-D Panorama Generation via Multi-plane Synchronization}},
   author={Huang, Yukun and Zhou, Yanning and Wang, Jianan and Huang, Kaiyi and Liu, Xihui},
   year={2025},
-  eprint={},
+  eprint={arXiv preprint arXiv:2506.17206},
   archivePrefix={arXiv},
   primaryClass={cs.CV},
 }
