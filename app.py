@@ -414,16 +414,11 @@ def create_gradio_demo():
         gr.Image(label="Converted Equirectangular (Euclidean Depth)"),
     ]
 
-    camera_position = (0, 90, 0.4)
     output_3d_models = [
         gr.Model3D(
-            display_mode="wireframe",
-            camera_position=camera_position,
             label="Reconstructed 3D Scene (Mesh)",
-            pan_speed=5.0,
             height=512,
         ),
-
         gr.Model3D(
             label="Reconstructed 3D Scene (3DGS)",
             height=512,
