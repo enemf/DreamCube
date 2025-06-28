@@ -82,10 +82,10 @@ def generate_K_R(fov, theta, phi, height, width, order='yx'):
 
     x_axis = np.array([1.0, 0.0, 0.0], np.float32)
     y_axis = np.array([0.0, 1.0, 0.0], np.float32)
-    rot_vec1 = (x_axis * np.radians(phi)).astype(np.float32).reshape(3, 1)
+    rot_vec1 = (x_axis * np.radians(phi)).astype(np.float64).reshape(3, 1)
     R_x, _ = cv2.Rodrigues(rot_vec1)
 
-    rot_vec2 = (y_axis * np.radians(theta)).astype(np.float32).reshape(3, 1)
+    rot_vec2 = (y_axis * np.radians(theta)).astype(np.float64).reshape(3, 1)
     R_y, _ = cv2.Rodrigues(rot_vec2)
 
     # Combine rotations in specified order
@@ -162,10 +162,10 @@ def map_pers_coords(wfov, theta, phi, h, w, output_type:str='xyz', normalize:boo
 
     y_axis = np.array([0.0, 1.0, 0.0], np.float32)
     z_axis = np.array([0.0, 0.0, 1.0], np.float32)
-    rot_vec1 = (z_axis * np.radians(theta)).astype(np.float32).reshape(3, 1)
+    rot_vec1 = (z_axis * np.radians(theta)).astype(np.float64).reshape(3, 1)
     [R1, _] = cv2.Rodrigues(rot_vec1)
 
-    rot_vec2 = (np.dot(R1, y_axis) * np.radians(-phi)).astype(np.float32).reshape(3, 1)
+    rot_vec2 = (np.dot(R1, y_axis) * np.radians(-phi)).astype(np.float64).reshape(3, 1)
     [R2, _] = cv2.Rodrigues(rot_vec2)
 
     xyz = xyz.reshape([h * w, 3]).T
