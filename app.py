@@ -400,8 +400,8 @@ def create_gradio_demo():
     import gradio as gr
 
     input_prompts = [gr.Textbox(label=f"Text Prompt ({view} View)") for view in ["Front", "Right", "Back", "Left", "Up", "Down"]]
-    input_image = [gr.Image(type="filepath", image_mode="RGB", height=512, width=512, label="Input RGB Image (Front View)")]
-    input_depth = [gr.Image(type="filepath", image_mode=None, height=512, width=512, label="Input Depth Image (Front View)")]
+    input_image = [gr.Image(label="Input RGB Image (Front View)")]
+    input_depth = [gr.Image(label="Input Depth Image (Front View)")]
     input_dropdown = [gr.Dropdown(choices=PANO_TO_3D_MODES, label='Pano-to-3D Mode')]
 
     output_cubemaps = [
@@ -415,14 +415,8 @@ def create_gradio_demo():
     ]
 
     output_3d_models = [
-        gr.Model3D(
-            label="Reconstructed 3D Scene (Mesh)",
-            height=512,
-        ),
-        gr.Model3D(
-            label="Reconstructed 3D Scene (3DGS)",
-            height=512,
-        )
+        gr.File(label="Reconstructed 3D Scene (Mesh)"),
+        gr.File(label="Reconstructed 3D Scene (3DGS)")
     ]
 
     examples = get_examples()
