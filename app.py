@@ -459,7 +459,7 @@ if __name__ == '__main__':
     if args.use_gradio:
         demo = create_gradio_demo()
         demo.queue(max_size=1)
-        demo.launch(server_name="0.0.0.0", server_port=7422)
+        demo.launch(server_name="0.0.0.0", server_port=7422, share=True)
     else:
         examples = get_examples()
         for i, example in enumerate(examples):
