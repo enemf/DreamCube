@@ -82,8 +82,8 @@ def generate_K_R(fov, theta, phi, height, width, order='yx'):
 
     x_axis = np.array([1.0, 0.0, 0.0], np.float32)
     y_axis = np.array([0.0, 1.0, 0.0], np.float32)
-    R_x, _ = cv2.Rodrigues(x_axis * np.radians(phi))
-    R_y, _ = cv2.Rodrigues(y_axis * np.radians(theta))
+    R_x, _ = cv2.Rodrigues((x_axis * np.radians(phi)).astype(np.float32))
+    R_y, _ = cv2.Rodrigues((y_axis * np.radians(theta)).astype(np.float32))
 
     # Combine rotations in specified order
     if order == 'yx':
@@ -159,8 +159,8 @@ def map_pers_coords(wfov, theta, phi, h, w, output_type:str='xyz', normalize:boo
 
     y_axis = np.array([0.0, 1.0, 0.0], np.float32)
     z_axis = np.array([0.0, 0.0, 1.0], np.float32)
-    [R1, _] = cv2.Rodrigues(z_axis * np.radians(theta))
-    [R2, _] = cv2.Rodrigues(np.dot(R1, y_axis) * np.radians(-phi))
+    [R1, _] = cv2.Rodrigues((z_axis * np.radians(theta)).astype(np.float32))
+    [R2, _] = cv2.Rodrigues((np.dot(R1, y_axis) * np.radians(-phi)).astype(np.float32))
 
     xyz = xyz.reshape([h * w, 3]).T
     xyz = np.dot(R1, xyz)
